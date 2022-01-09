@@ -1,0 +1,3 @@
+function sumOfkNumber(n,sum){
+
+}

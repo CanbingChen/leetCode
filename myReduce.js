@@ -1,0 +1,3 @@
+function myReduce(fn,base){
+    
+}

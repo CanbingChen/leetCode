@@ -4,11 +4,14 @@
  */
  var hIndex = function(citations) {
     citations.sort((a,b) => b-a)
-    const result = citations.findIndex((item,i) => {
-        return item === i+1
+    let result = 0
+    console.log(citations,'citations')
+    citations.forEach((item,i) => {
+        if(item >= i+1){
+            result = Math.max(result,result +1)
+        }
     })
-    if(result>=0)return result +1
-    return 0
+    return result
 };
 
 console.log(hIndex([3,0,6,1,5]))
