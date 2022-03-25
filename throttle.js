@@ -1,4 +1,4 @@
-function throttle(fn,delay){
+function throttle(fn,wait){
     let pre = 0
     let timer
     return function(...args){
@@ -22,3 +22,4 @@ function throttle(fn,delay){
     }
 
 }
+
